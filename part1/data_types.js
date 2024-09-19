@@ -26,3 +26,11 @@ console.log(typeof profession); // string
 console.log(typeof String); //function
 console.log(name - profession); // NaN = Not a Number so can't perform these operations
 console.log(typeof NaN); // number
+
+// also we can change the values of one variable to different data types. For instance :-
+let hello = 45;
+console.log(typeof hello); // number
+hello = false;
+console.log(typeof hello); // boolean
+hello = "hello";
+console.log(typeof hello); // string
