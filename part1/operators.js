@@ -16,3 +16,11 @@ console.log(`Pre-decrement the age ${--age}`);
 // In post-incerement and post-decrement use/assign the value then change
 console.log(`Post-increment the age ${age++}`);
 console.log(`Post-decrement the age ${age--}`);
+
+// Comparison operators
+let personAge = 34;
+if (personAge < 18) {
+  console.log("person is not eligible for voting");
+} else {
+  console.log("person can vote");
+}
