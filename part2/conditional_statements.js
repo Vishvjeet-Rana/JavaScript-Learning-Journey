@@ -7,6 +7,7 @@ if (name) {
 }
 console.log("after the if statement");
 
+// 'else' statement
 //example 2
 let age = prompt("enter you age");
 if (age >= 18) {
