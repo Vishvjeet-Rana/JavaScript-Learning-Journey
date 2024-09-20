@@ -1,3 +1,5 @@
+// Q. Get first n elements of an array
+
 let arr = [7, 9, 0, -2];
 
 const first_n_elements = function (arr, n) {
