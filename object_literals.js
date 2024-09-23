@@ -20,6 +20,7 @@ let item = {
 
 console.log(item.colors);
 console.log(item["colors"][2]); // red
+console.log(typeof item.price);
 
 // Now suppose we wanna access properties through the variables. For example :-
 let keemat = "price";
