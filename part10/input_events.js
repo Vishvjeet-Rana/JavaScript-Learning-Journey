@@ -13,3 +13,15 @@ form.addEventListener("submit", function (event) {
 
   console.log(`user name = ${user.value} and password is = ${pass.value}`);
 });
+
+// change and input events.
+let nameInput = document.querySelector("#user");
+let passInput = document.querySelector("#pass");
+
+nameInput.addEventListener("change", () => {
+  console.log(nameInput.value);
+});
+
+passInput.addEventListener("input", () => {
+  console.log(passInput.value);
+});
