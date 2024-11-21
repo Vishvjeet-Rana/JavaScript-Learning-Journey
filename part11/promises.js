@@ -11,4 +11,11 @@ const response = (data) => {
   });
 };
 
-// response("Concept of promises in JavaScript");
+let result = response("Concept of promises in JavaScript");
+result
+  .then((message) => {
+    console.log("Resolved:", message);
+  })
+  .catch((error) => {
+    console.log("Rejected:", error);
+  });
