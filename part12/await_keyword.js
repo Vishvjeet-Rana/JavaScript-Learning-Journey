@@ -10,12 +10,16 @@ const colorChange = (color, delay) => {
 };
 
 let async_await_example = async () => {
-  await colorChange("red", 1000);
-  await colorChange("blue", 1000);
-  colorChange("orange", 1000);
-  await colorChange("pink", 1000);
-  await colorChange("violet", 1000);
-  await colorChange("yellow", 1000);
+  try {
+    await colorChange("red", 1000);
+    await colorChange("blue", 1000);
+    await colorChange("orange", 1000);
+    await colorChange("pink", 1000);
+    await colorChange("violet", 1000);
+    await colorChange("yellow", 1000);
+  } catch (error) {
+    console.error();
+  }
 
   return "all colors are performed successfully";
 };
