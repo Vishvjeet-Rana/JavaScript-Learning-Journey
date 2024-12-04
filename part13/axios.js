@@ -2,10 +2,18 @@ let url = "https://catfact.ninja/fact";
 
 const button = document.querySelector("button");
 button.addEventListener("click", async () => {
-  let fact = await getFacts();
+  let fact = await getFacts(); // Await the result from getFacts function
   let p = document.querySelector("#output");
-  p.innerText = fact;
-  p.style.color = "green";
+
+  if (fact === "Error encountered") {
+    p.innerText = fact; // Display error message if returned from getFacts
+    p.style.color = "white";
+    p.style.backgroundColor = "darkred";
+  } else {
+    p.innerText = fact; // Display fact if successful
+    p.style.color = "lightgreen";
+    p.style.backgroundColor = "darkgreen";
+  }
 });
 
 async function getFacts() {
