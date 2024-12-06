@@ -31,4 +31,12 @@ const parent2 = {
 
 Object.setPrototypeOf(child, parent2);
 child.farewell(); // bye bye child's name
-child.greet(); // now greet is not a functon anymore as child's prototype has been replaced to parent2
+// child.greet();
+// now greet is not a functon anymore as child's prototype has been replaced to parent2
+
+// Using hasOwnProperty() to check for direct properties
+// See carefully it says "Direct" properties
+
+console.log(Object.hasOwnProperty("name"));
+console.log(Object.hasOwnProperty("farewell"));
+// Output: false (inherited from newParent)
