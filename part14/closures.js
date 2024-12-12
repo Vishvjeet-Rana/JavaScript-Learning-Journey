@@ -33,3 +33,24 @@ let add = addition(5); // at this line of code "add" has ƒ inner(b) {
 
 console.log(add(5)); // 10
 console.log(add(95));
+
+// 3. Event listeners Closures are often used in event listeners to "remember" variables.
+
+// for example - wanna change bg color on button click
+// document.querySelector("#orange").onclick = function () {
+//   document.body.style.backgroundColor = "orange";
+// };
+
+// document.querySelector("#yellow").onclick = function () {
+//   document.body.style.backgroundColor = "yellow";
+// };
+
+document.querySelector("#orange").onclick = onClickChangeColor("orange");
+
+document.querySelector("#yellow").onclick = onClickChangeColor("yellow");
+
+function onClickChangeColor(color) {
+  return function () {
+    document.body.style.backgroundColor = `${color}`;
+  };
+}
