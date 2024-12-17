@@ -138,7 +138,7 @@ Function Borrowing and Currying
 
 Clone this repository to your local machine:
 
-git clone https://github.com/your-username/js-learning-journey.git
+git clone https://github.com/Vishvjeet-Rana/js-learning-journey.git
 
 Explore each part by navigating through the folders.
 
